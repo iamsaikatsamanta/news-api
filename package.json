@@ -1,0 +1,17 @@
+{
+  "name": "news-api",
+  "version": "1.0.0",
+  "description": "This is a news Api For Helping Js Developer to Learn New Framewark",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saikat Samanta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14",
+    "mongoose-unique-validator": "^2.0.2"
+  }
+}
