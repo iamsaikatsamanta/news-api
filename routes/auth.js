@@ -2,6 +2,7 @@ const express= require('express'),
       router = express.Router()
       User = require('../models/user');
 router.post('/createuser',(req,res,next)=>{
+    const key = 'OE001254785';
     const newUser = new User({
         email: req.body.email,
         name: req.body.name,
