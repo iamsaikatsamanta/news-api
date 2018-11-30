@@ -3,6 +3,7 @@ const path =require('path'),
     mongoose=require('mongoose'),
     bodyParser=require('body-parser');
 const app = express();
+const authrout = require('./routes/auth');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -23,4 +24,5 @@ try {
 } catch (error) {
     console.log('Cannot Connect to Database'+error);
 }
+app.use('/api/auth/',authrout);
 module.exports = app;
