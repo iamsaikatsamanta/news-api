@@ -4,7 +4,6 @@ const path =require('path'),
     bodyParser=require('body-parser');
 const app = express();
 const authrout = require('./routes/auth');
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use((req, res, next) => {
@@ -26,3 +25,4 @@ try {
 }
 app.use('/api/auth/',authrout);
 module.exports = app;
+export default app;
