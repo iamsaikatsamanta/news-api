@@ -25,4 +25,4 @@ try {
 }
 app.use('/api/auth/',authrout);
 module.exports = app;
-export default app;
+export default app
