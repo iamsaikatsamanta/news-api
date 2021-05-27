@@ -24,5 +24,5 @@ try {
     console.log('Cannot Connect to Database'+error);
 }
 app.use('/api/auth/',authrout);
-module.exports = app;
-export default app
+module.exports = app
+export default app;
